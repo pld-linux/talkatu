@@ -7,7 +7,7 @@ Summary:	Talkatu - GTK4 widgets for chat applications library
 Summary(pl.UTF-8):	Talkatu - biblioteka widżetów GTK4 dla komunikatorów
 Name:		talkatu
 Version:	0.2.0
-Release:	1
+Release:	2
 License:	GPL v2+
 Group:		Libraries
 Source0:	https://downloads.sourceforge.net/pidgin/%{name}-%{version}.tar.xz
