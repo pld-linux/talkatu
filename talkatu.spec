@@ -101,16 +101,16 @@ Dokumentacja API biblioteki Talkatu.
 %setup -q
 
 %build
-%meson build \
+%meson \
 	%{!?with_static_libs:--default-library=shared} \
 	%{!?with_apidocs:-Ddoc=false}
 
-%ninja_build -C build
+%meson_build
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%ninja_install -C build
+%meson_install
 
 %if %{with apidocs}
 # FIXME: where to package gi-docgen generated docs?
